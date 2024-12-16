@@ -10,11 +10,14 @@ export default function Product({ productList }) {
   return (
     <div className="p-4 ">
       <div>
-        <h2>title: {value.name}</h2>
-        <p>body: {value.title}</p>
+        <h2 className="text-center">{value.name}</h2>
+        <p className="text-center"> {value.title}</p>
       </div>
-      <Link to={`/products`} className="text-red-500">
-        {"<"}-back
+      <Link
+        to={`/products`}
+        className=" border border-red-500 rounded-lg px-4 py-2 text-center"
+      >
+        Back
       </Link>
     </div>
   );
